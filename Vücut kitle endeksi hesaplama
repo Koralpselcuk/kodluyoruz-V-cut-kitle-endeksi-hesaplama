@@ -1,0 +1,21 @@
+Vücut Kitle İndeksi Hesaplama
+import java.util.Scanner;
+
+public class VücutKitleİndeksiHesaplama {
+
+    public static void main(String[] args) {
+        // Boy ve kilo değerlerini almak için bir Scanner nesnesi oluşturalım.
+        Scanner scanner = new Scanner(System.in);
+
+        
+         System.out.print("Lütfen boyunuzu (metre cinsinde) giriniz: ");
+        float boy = scanner.nextFloat();
+         
+        System.out.print("Lütfen kilonuzu (kilogram cinsinde) giriniz: ");
+        float kilo = scanner.nextFloat();
+
+         
+        float vki = kilo / (boy * boy);
+
+        
+        System.out.println("Vücut kitle indeksiniz: " + vki);
